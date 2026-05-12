@@ -12,13 +12,11 @@
 
         @font-face {
             font-family: 'Departure Mono';
-            src: url('DepartureMono-Regular.woff2') format('woff2'),
-            url('DepartureMono-Regular.woff') format('woff');
+            src: url('DepartureMono-Regular.woff2') format('woff2'), url('DepartureMono-Regular.woff') format('woff');
             font-weight: 400;
             font-style: normal;
             font-display: swap;
         }
-
         .font-departure-mono {
             font-family: 'Departure Mono' !important;
         }
@@ -54,10 +52,10 @@
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
 
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+            .fade-in.visible {
+                opacity: 1;
+                transform: translateY(0);
+            }
 
         .slide-in-left {
             opacity: 0;
@@ -65,10 +63,10 @@
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
 
-        .slide-in-left.visible {
-            opacity: 1;
-            transform: translateX(0);
-        }
+            .slide-in-left.visible {
+                opacity: 1;
+                transform: translateX(0);
+            }
 
         .slide-in-right {
             opacity: 0;
@@ -76,10 +74,10 @@
             transition: opacity 0.8s ease, transform 0.8s ease;
         }
 
-        .slide-in-right.visible {
-            opacity: 1;
-            transform: translateX(0);
-        }
+            .slide-in-right.visible {
+                opacity: 1;
+                transform: translateX(0);
+            }
 
         .scale-in {
             opacity: 0;
@@ -87,10 +85,10 @@
             transition: opacity 0.6s ease, transform 0.6s ease;
         }
 
-        .scale-in.visible {
-            opacity: 1;
-            transform: scale(1);
-        }
+            .scale-in.visible {
+                opacity: 1;
+                transform: scale(1);
+            }
 
         .gradient-text {
             /* background: linear-gradient(135deg, #ff6b35 0%, #10b981 100%); */
@@ -106,26 +104,26 @@
             border-radius: 0.5rem;
         }
 
-        .gradient-border::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            border-radius: 0.5rem;
-            padding: 2px;
-            background: linear-gradient(135deg, #ff6b35, #c301c6);
-            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-            -webkit-mask-composite: xor;
-            mask-composite: exclude;
-        }
+            .gradient-border::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                border-radius: 0.5rem;
+                padding: 2px;
+                background: linear-gradient(135deg, #ff6b35, #c301c6);
+                -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+                -webkit-mask-composite: xor;
+                mask-composite: exclude;
+            }
 
         .tech-badge {
             transition: all 0.3s ease;
         }
 
-        .tech-badge:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
-        }
+            .tech-badge:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+            }
 
         .project-card {
             transition: all 0.3s ease;
@@ -133,31 +131,31 @@
             border: 1px solid #2a2a2a;
         }
 
-        .project-card:hover {
-            border-color: #ff6b35;
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.2);
-        }
+            .project-card:hover {
+                border-color: #ff6b35;
+                transform: translateY(-5px);
+                box-shadow: 0 10px 30px rgba(255, 107, 53, 0.2);
+            }
 
         .nav-link {
             position: relative;
             transition: color 0.3s ease;
         }
 
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, #ff6b35, #c301c6);
-            transition: width 0.3s ease;
-        }
+            .nav-link::after {
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 0;
+                height: 2px;
+                background: linear-gradient(90deg, #ff6b35, #c301c6);
+                transition: width 0.3s ease;
+            }
 
-        .nav-link:hover::after {
-            width: 100%;
-        }
+            .nav-link:hover::after {
+                width: 100%;
+            }
 
         .typing-animation {
             overflow: hidden;
@@ -193,84 +191,78 @@
             transition-delay: var(--delay);
             opacity: 0;
             transform: translateY(-30px) scale(0.95);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3),
-            0 6px 6px rgba(0, 0, 0, 0.2),
-            inset 0 -2px 4px rgba(0, 0, 0, 0.3),
-            inset 0 2px 4px rgba(255, 255, 255, 0.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.2), inset 0 -2px 4px rgba(0, 0, 0, 0.3), inset 0 2px 4px rgba(255, 255, 255, 0.05);
         }
 
-        .stack-layer.visible {
-            opacity: 1;
-            transform: translateY(0) scale(1);
-        }
+            .stack-layer.visible {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
 
-        .stack-layer:first-child {
-            margin-top: 0;
-            z-index: 6;
-        }
+            .stack-layer:first-child {
+                margin-top: 0;
+                z-index: 6;
+            }
 
-        .stack-layer:nth-child(2) {
-            z-index: 5;
-        }
+            .stack-layer:nth-child(2) {
+                z-index: 5;
+            }
 
-        .stack-layer:nth-child(3) {
-            z-index: 4;
-        }
+            .stack-layer:nth-child(3) {
+                z-index: 4;
+            }
 
-        .stack-layer:nth-child(4) {
-            z-index: 3;
-        }
+            .stack-layer:nth-child(4) {
+                z-index: 3;
+            }
 
-        .stack-layer:nth-child(5) {
-            z-index: 2;
-        }
+            .stack-layer:nth-child(5) {
+                z-index: 2;
+            }
 
-        .stack-layer:nth-child(6) {
-            z-index: 1;
-        }
+            .stack-layer:nth-child(6) {
+                z-index: 1;
+            }
 
-        .stack-layer::before {
-            content: '';
-            position: absolute;
-            inset: -2px;
-            background: linear-gradient(135deg, #ff6b35, #10b981);
-            border-radius: 1rem;
-            opacity: 0;
-            transition: opacity 0.4s ease;
-            z-index: -1;
-        }
+            .stack-layer::before {
+                content: '';
+                position: absolute;
+                inset: -2px;
+                background: linear-gradient(135deg, #ff6b35, #10b981);
+                border-radius: 1rem;
+                opacity: 0;
+                transition: opacity 0.4s ease;
+                z-index: -1;
+            }
 
-        .stack-layer:hover {
-            transform: translateY(-15px) scale(1.05) rotateX(5deg);
-            border-color: transparent;
-            box-shadow: 0 20px 40px rgba(255, 107, 53, 0.4),
-            0 10px 20px rgba(16, 185, 129, 0.2),
-            inset 0 -2px 8px rgba(0, 0, 0, 0.4),
-            inset 0 2px 8px rgba(255, 255, 255, 0.1);
-            z-index: 10 !important;
-        }
+            .stack-layer:hover {
+                transform: translateY(-15px) scale(1.05) rotateX(5deg);
+                border-color: transparent;
+                box-shadow: 0 20px 40px rgba(255, 107, 53, 0.4), 0 10px 20px rgba(16, 185, 129, 0.2), inset 0 -2px 8px rgba(0, 0, 0, 0.4), inset 0 2px 8px rgba(255, 255, 255, 0.1);
+                z-index: 10 !important;
+            }
 
-        .stack-layer:hover::before {
-            opacity: 1;
-        }
+                .stack-layer:hover::before {
+                    opacity: 1;
+                }
 
-        .stack-layer img,
-        .stack-layer svg {
-            transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
-        }
+            .stack-layer img,
+            .stack-layer svg {
+                transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+                filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+            }
 
-        .stack-layer:hover img,
-        .stack-layer:hover svg {
-            transform: scale(1.2) rotate(360deg);
-        }
+            .stack-layer:hover img,
+            .stack-layer:hover svg {
+                transform: scale(1.2) rotate(360deg);
+            }
 
-        .stack-layer span {
-            color: #e0e0e0;
-            font-weight: 600;
-            font-size: 0.875rem;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        }
+            .stack-layer span {
+                color: #e0e0e0;
+                font-weight: 600;
+                font-size: 0.875rem;
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            }
 
         .project-card {
             transition: all 0.3s ease;
@@ -278,16 +270,17 @@
             border: 1px solid #2a2a2a;
         }
 
-        .project-card:hover {
-            border-color: #ff6b35;
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(255, 107, 53, 0.2);
-        }
+            .project-card:hover {
+                border-color: #ff6b35;
+                transform: translateY(-5px);
+                box-shadow: 0 10px 30px rgba(255, 107, 53, 0.2);
+            }
 
         @keyframes typing {
             from {
                 width: 0
             }
+
             to {
                 width: 100%
             }
@@ -307,22 +300,23 @@
             position: relative;
         }
 
-        .typewriter::after {
-            content: "";
-            position: absolute;
-            right: -8px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 8px;
-            height: 1.2em;
-            background-color: #c301c6; /* green-500 */
-            animation: blink 0.8s steps(1) infinite;
-        }
+            .typewriter::after {
+                content: "";
+                position: absolute;
+                right: -8px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 8px;
+                height: 1.2em;
+                background-color: #c301c6; /* green-500 */
+                animation: blink 0.8s steps(1) infinite;
+            }
 
         @keyframes blink {
             0%, 50% {
                 opacity: 1;
             }
+
             50%, 100% {
                 opacity: 0;
             }
@@ -337,40 +331,41 @@
             animation: flip 6s infinite;
         }
 
-        .coin-flip:hover {
-            transform: rotateY(180deg);
-            cursor: pointer;
-        }
+            .coin-flip:hover {
+                transform: rotateY(180deg);
+                cursor: pointer;
+            }
 
-        .coin-flip img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            backface-visibility: hidden;
-            border-radius: 50%;
-            object-fit: cover;
-        }
+            .coin-flip img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                border-radius: 50%;
+                object-fit: cover;
+            }
 
-        .coin-flip .front {
-            transform: rotateY(0deg);
-        }
+            .coin-flip .front {
+                transform: rotateY(0deg);
+            }
 
-        .coin-flip .back {
-            transform: rotateY(180deg);
-        }
+            .coin-flip .back {
+                transform: rotateY(180deg);
+            }
 
         @keyframes flip {
             0%, 45% {
                 transform: rotateY(0deg);
             }
+
             50%, 95% {
                 transform: rotateY(180deg);
             }
+
             100% {
                 transform: rotateY(360deg);
             }
         }
-
     </style>
 </head>
 <body class="text-gray-100">
@@ -389,7 +384,6 @@
                 <a href="#about" class="nav-link text-gray-300 hover:text-orange-500">About</a>
                 <a href="#project" class="nav-link text-gray-300 hover:text-orange-500">Projects</a>
                 <a href="#skills" class="nav-link text-gray-300 hover:text-orange-500">Skills</a>
-                <!--<a href="#recommendations" class="nav-link text-gray-300 hover:text-orange-500">Recommendations</a>-->
                 <a href="#contact" class="nav-link text-gray-300 hover:text-orange-500">Contact</a>
             </div>
         </div>
@@ -587,21 +581,21 @@
                         <img src="https://cdn.simpleicons.org/.Net?viewbox=auto&size=20" alt=".Net" class="">
                     </span>
                     <span class="inline-flex items-center gap-2 rounded-lg tech-badge px-4 py-1 bg-red-500 bg-opacity-10 text-red-500 rounded-lg border border-red-500 border-opacity-30 font-mono">
-                          <img src="https://cdn.simpleicons.org/laravel?viewbox=auto&size=20" alt="Laravel" class="">
-                            Laravel
-                        </span>
-                    
+                        <img src="https://cdn.simpleicons.org/laravel?viewbox=auto&size=20" alt="Laravel" class="">
+                        Laravel
+                    </span>
+
                     <span class="inline-flex items-center gap-2 rounded-lg tech-badge px-4 py-1 bg-orange-500 bg-opacity-10 text-orange-500 rounded-lg border border-orange-500 border-opacity-30 font-mono">
-                            <img src="https://cdn.simpleicons.org/mysql?viewbox=auto&size=20" alt="MySQL" class="">
-                        </span>
+                        <img src="https://cdn.simpleicons.org/mysql?viewbox=auto&size=20" alt="MySQL" class="">
+                    </span>
                     <span class="inline-flex items-center gap-2 rounded-lg tech-badge px-4 py-1 bg-blue-500 bg-opacity-10 text-blue-500 rounded-lg border border-blue-500 border-opacity-30 font-mono">
-                            <img src="https://cdn.simpleicons.org/postgresql?viewbox=auto&size=20" alt="PostgreSQL"
-                                 class="">PostgreSQL
-                        </span>
+                        <img src="https://cdn.simpleicons.org/postgresql?viewbox=auto&size=20" alt="PostgreSQL"
+                             class="">PostgreSQL
+                    </span>
                     <span class="inline-flex items-center gap-2 rounded-lg tech-badge px-4 py-1 bg-orange-500 bg-opacity-10 text-orange-500 rounded-lg border border-orange-500 border-opacity-30 font-mono">
-                            <img src="https://cdn.simpleicons.org/node.js?viewbox=auto&size=20" alt="Node.js"
-                                 class="">Node.js
-                        </span>
+                        <img src="https://cdn.simpleicons.org/node.js?viewbox=auto&size=20" alt="Node.js"
+                             class="">Node.js
+                    </span>
                 </div>
             </div>
 
@@ -617,19 +611,19 @@
                         DevExpress
                     </span>
                     <span class="inline-flex items-center gap-2 rounded-lg tech-badge px-4 py-1 bg-yellow-500 bg-opacity-10 text-yellow-500 rounded-lg border border-yellow-500 border-opacity-30 font-mono">
-                          <img src="https://cdn.simpleicons.org/javaScript?viewbox=auto&size=20" alt="JavaScript"
-                               class="">JavaScript
-                        </span>
+                        <img src="https://cdn.simpleicons.org/javaScript?viewbox=auto&size=20" alt="JavaScript"
+                             class="">JavaScript
+                    </span>
                     <span class="inline-flex items-center gap-2 rounded-lg tech-badge px-4 py-1 bg-orange-500 bg-opacity-10 text-orange-500 rounded-lg border border-orange-500 border-opacity-30 font-mono">
-                          <img src="https://cdn.simpleicons.org/HTML5?viewbox=auto&size=20" alt="HTML5" class="">HTML5
-                        </span>
+                        <img src="https://cdn.simpleicons.org/HTML5?viewbox=auto&size=20" alt="HTML5" class="">HTML5
+                    </span>
                     <span class="inline-flex items-center gap-2 rounded-lg tech-badge px-4 py-1 bg-fuchsia-500 bg-opacity-10 text-fuchsia-500 rounded-lg border border-fuchsia-500 border-opacity-30 font-mono">
-                          <img src="https://cdn.simpleicons.org/css?viewbox=auto&size=20" alt="CSS" class="">CSS
-                        </span>
+                        <img src="https://cdn.simpleicons.org/css?viewbox=auto&size=20" alt="CSS" class="">CSS
+                    </span>
                     <span class="inline-flex items-center gap-2 rounded-lg tech-badge px-4 py-1 bg-sky-500 bg-opacity-10 text-sky-500 rounded-lg border border-sky-500 border-opacity-30 font-mono">
-                          <img src="https://cdn.simpleicons.org/Bootstrap?viewbox=auto&size=20" alt="Bootstrap"
-                               class="">Bootstrap
-                        </span>
+                        <img src="https://cdn.simpleicons.org/Bootstrap?viewbox=auto&size=20" alt="Bootstrap"
+                             class="">Bootstrap
+                    </span>
                 </div>
             </div>
 
@@ -638,16 +632,16 @@
                 <h3 class="text-2xl font-semibold mb-6 text-gray-500 font-mono">DevOps & Tools</h3>
                 <div class="flex flex-wrap gap-3">
                     <span class="inline-flex items-center gap-2 rounded-lg tech-badge px-4 py-1 bg-red-500 bg-opacity-10 text-red-500 rounded-lg border border-red-500 border-opacity-30 font-mono">
-                          <img src="https://cdn.simpleicons.org/Git?viewbox=auto&size=20" alt="Git" class="">Git
-                        </span>
+                        <img src="https://cdn.simpleicons.org/Git?viewbox=auto&size=20" alt="Git" class="">Git
+                    </span>
                     <span class="inline-flex items-center gap-2 rounded-lg tech-badge px-4 py-1 bg-white-500 bg-opacity-10 text-white-500 rounded-lg border border-white-500 border-opacity-30 font-mono">
-                          <img src="https://cdn.simpleicons.org/gitextensions?viewbox=auto&size=20" alt="CI/CD"
-                               class="">CI/CD
-                        </span>
+                        <img src="https://cdn.simpleicons.org/gitextensions?viewbox=auto&size=20" alt="CI/CD"
+                             class="">CI/CD
+                    </span>
                     <span class="inline-flex items-center gap-2 rounded-lg tech-badge px-4 py-1 bg-gray-500 bg-opacity-10 text-gray-500 rounded-lg border border-gray-500 border-opacity-30 font-mono">
-                          <img src="https://cdn.simpleicons.org/readthedocs?viewbox=auto&size=20" alt="Doctrine"
-                               class="">Documentation
-                        </span>
+                        <img src="https://cdn.simpleicons.org/readthedocs?viewbox=auto&size=20" alt="Doctrine"
+                             class="">Documentation
+                    </span>
                 </div>
             </div>
 
@@ -667,122 +661,103 @@
     </div>
 </section>
 
-<!-- Recommendations Section -->
-<!--<section id="recommendations" class="py-20 px-6">
-    <div class="max-w-6xl mx-auto">
-        <h2 class="text-4xl font-heading mb-12 text-center fade-in">Recommendations</h2>
+<section id="github" class="py-24 px-6 bg-black relative overflow-hidden">
+    
+    <!-- Background Glow -->
+    <div class="absolute inset-0 opacity-20">
+        <div class="absolute top-0 left-1/4 w-72 h-72 bg-green-500 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-1/4 w-72 h-72 bg-purple-500 rounded-full blur-3xl"></div>
+    </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">-->
-            <!-- Project Card 1 - Stefan Walke -->
-            <!--<div class="project-card rounded-lg p-6 scale-in" style="transition-delay: 0.1s;">
-                <div class="w-full">
-                    <h3 class="text-xl font-heading mb-1 text-white">Stefan Walke</h3>
-                    <div class="text-orange-500 font-mono text-sm mb-0">Engineering Manager</div>
-                    <div class="text-fuchsia-400 font-mono text-sm mb-2">Actindo AG</div>
-                </div>
-                <p class="text-gray-400 mb-4 leading-relaxed">
-                    <span class="text-2xl font-semibold">I</span> had the opportunity to work with Noel for over two years, during which he consistently proved
-                    himself to be a highly reliable and capable software engineer. Beyond his strong technical
-                    foundation, what stood out most was his sense of ownership...
+    <div class="max-w-7xl mx-auto relative z-10">
 
-                </p>
-                <button onclick="openDialog('stefan-walke-dialog')"
-                        class="text-orange-500 hover:text-fuchsia-400 font-mono text-sm float-right">
-                    View full →
-                </button>
-            </div>-->
+        <!-- Heading -->
+        <div class="text-center mb-14 fade-in">
+            <h2 class="text-5xl md:text-6xl font-bold text-white font-departure-mono">
+                GitHub
+                <span class="gradient-text">Activity</span>
+            </h2>
 
-            <!-- Project Card 2  - Richards-->
-            <!--<div class="project-card rounded-lg p-6 scale-in" style="transition-delay: 0.1s;">
-                <div class="w-full">
-                    <h3 class="text-xl font-heading mb-1 text-white">Richards Saji</h3>
-                    <div class="text-orange-500 font-mono text-sm mb-0">QA Lead</div>
-                    <div class="text-fuchsia-400 font-mono text-sm mb-2">Actindo AG</div>
-                </div>
-                <p class="text-gray-400 mb-4 leading-relaxed">
-                    <span class="text-2xl font-semibold">I</span> had the opportunity to work with Noel, a dependable and collaborative Senior Backend Engineer,
-                    during our work on the Nintendo project at Actindo, including the major Payment Gateway
-                    migration initiative...
-                </p>
+            <p class="text-gray-400 mt-4 text-lg font-serif">
+                Contributions, commits, and coding consistency
+            </p>
+        </div>
 
-                <button onclick="openDialog('richards-saji-dialog')"
-                        class="text-orange-500 hover:text-fuchsia-400 font-mono text-sm float-right float-right">
-                    View full →
-                </button>
-            </div>-->
+        <!-- GitHub Card -->
+        <div class="bg-[#0d1117] border border-gray-800 rounded-3xl p-8 shadow-2xl backdrop-blur-xl fade-in">
 
-            <!-- Project Card 3 - Mike -->
-            <!--<div class="project-card rounded-lg p-6 scale-in" style="transition-delay: 0.1s;">
-                <div class="w-full">
-                    <h3 class="text-xl font-heading mb-1 text-white">Mike Rockétt</h3>
-                    <div class="text-orange-500 font-mono text-sm mb-0">Lead Software Developer</div>
-                    <div class="text-fuchsia-400 font-mono text-sm mb-2">Megafreight Services</div>
-                </div>
-                <p class="text-gray-400 mb-4 leading-relaxed">
-                    <span class="text-2xl font-semibold">N</span>oel is an excellent backend engineer, and any team would be lucky to have him...
-                </p>
-                <button onclick="openDialog('mike-rockett-dialog')"
-                        class="text-orange-500 hover:text-fuchsia-400 font-mono text-sm float-right">
-                    View full →
-                </button>
-            </div>-->
+            <!-- Header -->
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 mb-10">
 
-            <!-- Project Card 4 - Stefan Muller -->
-            <!--<div class="project-card rounded-lg p-6 scale-in" style="transition-delay: 0.1s;">
-                <div class="w-full">
-                    <h3 class="text-xl font-heading mb-1 text-white">Stefan Müller</h3>
-                    <div class="text-orange-500 font-mono text-sm mb-0">Senior Account Director</div>
-                    <div class="text-fuchsia-400 font-mono text-sm mb-2">Thinkproject</div>
-                </div>
-                <p class="text-gray-400 mb-4 leading-relaxed">
-                    <span class="text-2xl font-semibold">I</span>'ve had the privilege of knowing Noel for many years, and in that time he has consistently
-                    impressed me with his extraordinary intelligence, discipline, and integrity. Noel is one of the
-                    most meticulous and calculated individuals I’ve ever met...
-                </p>
-                <button onclick="openDialog('stefan-muller-dialog')"
-                        class="text-orange-500 hover:text-fuchsia-400 font-mono text-sm float-right">
-                    View full →
-                </button>
-            </div>-->
+                <div class="flex items-center gap-5">
+                    <div class="w-16 h-16 rounded-2xl bg-white/5 border border-gray-700 flex items-center justify-center">
+                        <img src="https://cdn.simpleicons.org/github/white"
+                             class="w-9 h-9"
+                             alt="GitHub">
+                    </div>
 
-            <!-- Project Card 5 - Lourens -->
-            <!--<div class="project-card rounded-lg p-6 scale-in" style="transition-delay: 0.1s;">
-                <div class="w-full">
-                    <h3 class="text-xl font-heading mb-1 text-white">Lourens Nortje</h3>
-                    <div class="text-orange-500 font-mono text-sm mb-0">Managing Director</div>
-                    <div class="text-fuchsia-400 font-mono text-sm mb-2">Starbright Solutions</div>
+                    <div>
+                        <h3 class="text-2xl font-bold text-white font-mono">
+                            GitHub Contributions
+                        </h3>
+
+                        <p class="text-gray-400 mt-1">
+                            My daily coding activity & commit history
+                        </p>
+                    </div>
                 </div>
 
-                <p class="text-gray-400 mb-4 leading-relaxed">
-                    <span class="text-2xl font-semibold">I</span> had the pleasure of working with Noel as a PHP developer at our company from 2011 to 2014. He
-                    started with no PHP knowledge, but he put in the work to learn it thoroughly...
-                </p>
-                <button onclick="openDialog('lourens-nortje-dialog')"
-                        class="text-orange-500 hover:text-fuchsia-400 font-mono text-sm float-right">
-                    View full →
-                </button>
-            </div>-->
+                <!-- Status -->
+                <div class="flex items-center gap-3 px-5 py-2 rounded-full border border-green-500/20 bg-green-500/10 w-fit">
+                    <div class="w-3 h-3 rounded-full bg-green-500 animate-pulse"></div>
 
-            <!-- Project Card 6 - Alain -->
-            <!--<div class="project-card rounded-lg p-6 scale-in" style="transition-delay: 0.1s;">
-                <div class="w-full">
-                    <h3 class="text-xl font-heading mb-1 text-white">Alain Jacquet</h3>
-                    <div class="text-orange-500 font-mono text-sm mb-0">Managing Director</div>
-                    <div class="text-fuchsia-400 font-mono text-sm mb-2">SABEeX</div>
+                    <span class="text-green-400 font-mono text-sm">
+                        Active Developer
+                    </span>
                 </div>
-                <p class="text-gray-400 mb-4 leading-relaxed">
-                    <span class="text-2xl font-semibold">W</span>hen I began development of the SABEeX Delivery Management System, I engaged Noel Young as an energetic
-                    and skilled developer. During his time with SABEeX, he built the original platform...
-                </p>
-                <button onclick="openDialog('alain-jacquet-dialog')"
-                        class="text-orange-500 hover:text-fuchsia-400 font-mono text-sm float-right">
-                    View full →
-                </button>
             </div>
+            <div>
+                <div class="flex items-center justify-between mb-6 flex-wrap gap-4">
+                    <!-- Year Buttons -->
+                    <div class="flex gap-2">
+                        <button onclick="setYear(2023)" id="btn-2023"
+                                class="year-btn px-4 py-1 rounded-full font-mono text-sm border border-gray-700 text-gray-400 hover:border-orange-500 hover:text-orange-500 transition-all duration-200">
+                            2023
+                        </button>
+                        <button onclick="setYear(2024)" id="btn-2024"
+                                class="year-btn px-4 py-1 rounded-full font-mono text-sm border border-gray-700 text-gray-400 hover:border-orange-500 hover:text-orange-500 transition-all duration-200">
+                            2024
+                        </button>
+                        <button onclick="setYear(2025)" id="btn-2025"
+                                class="year-btn px-4 py-1 rounded-full font-mono text-sm border border-gray-700 text-gray-400 hover:border-orange-500 hover:text-orange-500 transition-all duration-200">
+                            2025
+                        </button>
+                        <button onclick="setYear(2026)" id="btn-2026"
+                                class="year-btn px-4 py-1 rounded-full font-mono text-sm border border-gray-700 text-gray-400 hover:border-orange-500 hover:text-orange-500 transition-all duration-200">
+                            2026
+                        </button>
+                    </div>
 
+                    <!-- Total Contributions -->
+                    <div>
+                        <span id="contrib-total" class="text-2xl font-bold gradient-text font-heading">0</span>
+                        <span class="text-gray-400 font-mono text-sm ml-1">contributions in <span id="contrib-year">2025</span></span>
+                    </div>
+                </div>
+
+                <!-- Loading -->
+                <div id="contrib-loading" class="text-center text-gray-500 font-mono text-sm py-8 hidden">
+                    Loading contributions...
+                </div>
+
+                <!-- Graph Canvas -->
+                <div class="overflow-x-auto">
+                    <canvas id="contrib-canvas" style="width:100%;"></canvas>
+                </div>
+            </div>
         </div>
     </div>
-</section>-->
+</section>
 
 <!-- Contact Section -->
 <section id="contact" class="py-20 px-6 bg-black bg-opacity-50">
@@ -831,231 +806,6 @@
 
 <!-- Dialogs Section -->
 <section>
-    <!-- Stefan Walke Dialog -->
-    <div id="stefan-walke-dialog" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden slide-in-left">
-        <div class="bg-gray-900 p-8 rounded-lg max-w-xl max-h-[80vh] overflow-y-auto">
-            <h3 class="text-xl font-heading text-white">Stefan Walke</h3>
-            <div class="text-orange-500 font-mono text-sm mb-0">Engineering Manager</div>
-            <div class="text-fuchsia-400 font-mono text-sm mb-2">Actindo AG</div>
-            <div class="flex flex-col gap-4">
-                <p class="text-gray-400 leading-relaxed">
-                    <span class="text-2xl font-semibold">I</span> had the opportunity to work with Noel for over two years, during which he consistently proved
-                    himself to be a highly reliable and capable software engineer. Beyond his strong technical
-                    foundation, what stood out most was his sense of ownership. He took end-to-end responsibility
-                    for his work, communicated clearly with both internal teams and external stakeholders, and
-                    always pushed tasks through to completion.
-                </p>
-
-                <p class="text-gray-400 leading-relaxed">
-                    <span class="text-2xl font-semibold">O</span>ne of his most impactful contributions was integrating a complex payment process into an
-                    already established business workflow. It was a challenging piece of work with many
-                    dependencies, and he handled it with professionalism and care.
-                </p>
-                <p class="text-gray-400 leading-relaxed">
-                    <span class="text-2xl font-semibold">I</span> would confidently recommend Noel for any senior software engineer role. He brings solid
-                    technical skills, strong communication, and a dependable work ethic to any team.
-                </p>
-                    <div>
-                        <button onclick="closeDialog('stefan-walke-dialog')"
-                                class="mt-4 text-orange-500 hover:text-fuchsia-400 font-mono rounded-lg border border-orange-500 hover:border-fuchsia-500 py-2 px-4 float-right">
-                            Close ✕
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Richards Dialog -->
-    <div id="richards-saji-dialog"
-         class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden slide-in-right">
-        <div class="bg-gray-900 p-8 rounded-lg max-w-xl max-h-[80vh] overflow-y-auto">
-            <div class="w-full">
-                <h3 class="text-xl font-heading text-white">Richards Saji</h3>
-                <div class="text-orange-500 font-mono text-sm mb-0">QA Lead</div>
-                <div class="text-fuchsia-400 font-mono text-sm mb-2">Actindo AG</div>
-            </div>
-            <div class="flex flex-col gap-4">
-                <p class="text-gray-400 leading-relaxed">
-                    <span class="text-2xl font-semibold">I</span> had the opportunity to work with Noel, a dependable and collaborative Senior Backend Engineer,
-                    during our work on the Nintendo project at Actindo, including the major Payment Gateway
-                    migration initiative.
-                </p>
-
-                <p class="text-gray-400 leading-relaxed">
-                    <span class="text-2xl font-semibold">N</span>oel is the kind of engineer every QA wishes to work with. His documentation is clear,
-                    thoughtful, and genuinely helpful, making it effortless to understand the flow, impacts, and
-                    expectations of each feature. He consistently provided meaningful implementation notes and
-                    straightforward testing guidance that saved time, eliminated confusion, and made the entire QA
-                    process faster and more reliable.
-                </p>
-                <p class="text-gray-400 leading-relaxed">
-                    <span class="text-2xl font-semibold">O</span>ne thing that genuinely stood out: his tickets were always a pleasure to test. They were
-                    well-prepared, stable, and often passed on the first run. That level of quality doesn’t happen
-                    by accident—it reflects his strong discipline, careful thinking, and commitment to doing things
-                    right.
-                </p>
-                <p class="text-gray-400 leading-relaxed">
-                    <span class="text-2xl font-semibold">B</span>eyond the technical side, Noel is proactive, calm under pressure, and always ready to support
-                    the team. From day one, he brought steady contribution, ownership, and maturity to the project.
-                    His communication is direct and effective, and working with him feels smooth, productive, and
-                    truly collaborative.
-                </p>
-                <p class="text-gray-400 leading-relaxed">
-                    <span class="text-2xl font-semibold">N</span>oel is not just a strong backend engineer—he’s a team player who elevates everyone around him.
-                    Any team would be lucky to have him, and I highly recommend him without hesitation.
-                </p>
-                <div>
-                    <button onclick="closeDialog('richards-saji-dialog')"
-                            class="mt-4 text-orange-500 hover:text-fuchsia-400 font-mono rounded-lg border border-orange-500 hover:border-fuchsia-500 py-2 px-4 float-right">
-                        Close ✕
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Mike Rockett -->
-    <div id="mike-rockett-dialog"
-         class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden slide-in-right">
-        <div class="bg-gray-900 p-8 rounded-lg max-w-xl max-h-[80vh] overflow-y-auto">
-            <div class="w-full">
-                <h3 class="text-xl font-heading text-white">Mike Rockétt</h3>
-                <div class="text-orange-500 font-mono text-sm mb-0">Lead Software Developer</div>
-                <div class="text-fuchsia-400 font-mono text-sm mb-2">Megafreight Services</div>
-            </div>
-            <div class="flex flex-col gap-4">
-                <p class="text-gray-400 leading-relaxed">
-                    <span class="text-2xl font-semibold">N</span>oel and I worked together for nearly two years, building features to replace a legacy exports
-                    forwarding system that was being shut down. While I focused on operational functions, Noel
-                    concentrated on the financial side, from invoicing, to financial-system integrations, to
-                    approvals and reporting. We worked closely to ensure everything came together seamlessly, and I
-                    was impressed by the meticulous thought he put into both understanding problems and crafting
-                    their solutions.
-                </p>
-                <p class="text-gray-400 leading-relaxed">
-                    <span class="text-2xl font-semibold">H</span>is work was excellent, and he developed valuable expertise and knowledge in
-                    freight forwarding – an industry that anyone seasoned enough will tell you is far from
-                    straightforward – as well as financial business functions more broadly.
-                </p>
-                <p class="text-gray-400 leading-relaxed">
-                    <span class="text-2xl font-semibold">N</span>oel is an excellent backend engineer, and any team would be lucky to have him.
-                </p>
-            </div>
-            <div>
-                <button onclick="closeDialog('mike-rockett-dialog')"
-                        class="mt-4 text-orange-500 hover:text-fuchsia-400 font-mono rounded-lg border border-orange-500 hover:border-fuchsia-500 py-2 px-4 float-right">
-                    Close ✕
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Stefan Muller Dialog -->
-    <div id="stefan-muller-dialog"
-         class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden slide-in-left">
-        <div class="bg-gray-900 p-8 rounded-lg max-w-xl max-h-[80vh] overflow-y-auto">
-            <div class="w-full">
-                <h3 class="text-xl font-heading text-white">Stefan Müller</h3>
-                <div class="text-orange-500 font-mono text-sm mb-0">Senior Account Director</div>
-                <div class="text-fuchsia-400 font-mono text-sm mb-2">Thinkproject</div>
-            </div>
-            <div class="flex flex-col gap-4">
-                <p class="text-gray-400 leading-relaxed">
-                    <span class="text-2xl font-semibold">I</span>’ve had the privilege of knowing Noel for many years, and in that time he has consistently
-                    impressed me with his extraordinary intelligence, discipline, and integrity. Noel is one of the
-                    most meticulous and calculated individuals I’ve ever met. He approaches every challenge with a
-                    level of thoughtfulness and precision that is rare, and it’s no surprise that he is a member of
-                    Mensa. His analytical ability and problem-solving skills are truly exceptional.
-                </p>
-                <p class="text-gray-400 leading-relaxed">
-                    <span class="text-2xl font-semibold">B</span>eyond his intellectual strengths, Noel possesses an extraordinary capacity for self-discipline.
-                    Having completed numerous ultramarathons, he has repeatedly demonstrated a level of commitment,
-                    resilience, and mental toughness that few people ever develop. Whether he is pursuing personal
-                    goals or taking on professional responsibilities, Noel approaches everything with the same
-                    relentless determination to achieve excellence.
-                </p>
-                <p class="text-gray-400 leading-relaxed">
-                    <span class="text-2xl font-semibold">A</span>ny organisation would be fortunate to have someone of Noel’s calibre. He brings intelligence,
-                    focus, reliability, and a deep sense of purpose to everything he does. I consider myself
-                    fortunate to call him a long-time friend, and I wholeheartedly recommend him.
-                </p>
-                <div>
-                    <button onclick="closeDialog('stefan-muller-dialog')"
-                            class="mt-4 text-orange-500 hover:text-fuchsia-400 font-mono rounded-lg border border-orange-500 hover:border-fuchsia-500 py-2 px-4 float-right">
-                        Close ✕
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Lourens dialog -->
-    <div id="lourens-nortje-dialog"
-         class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden slide-in-left">
-        <div class="bg-gray-900 p-8 rounded-lg max-w-xl max-h-[80vh] overflow-y-auto">
-            <div class="w-full">
-                <h3 class="text-xl font-heading text-white">Lourens Nortje</h3>
-                <div class="text-orange-500 font-mono text-sm mb-0">Managing Director</div>
-                <div class="text-fuchsia-400 font-mono text-sm mb-2">Starbright Solutions</div>
-            </div>
-            <div class="flex flex-col gap-4">
-                <p class="text-gray-400 leading-relaxed">
-                    <span class="text-2xl font-semibold">I</span> had the pleasure of working with Noel as a PHP developer at our company from 2011 to 2014. He
-                    started with no PHP knowledge, but he put in the work to learn it thoroughly. In just a short
-                    time, he turned into a reliable PHP developer, handling all the skills you'd expect from someone
-                    with years on the job.
-                </p>
-                <p class="text-gray-400 leading-relaxed">
-                    <span class="text-2xl font-semibold">N</span>oel always stepped up, taking charge and owning every task we gave him. He played a key part in
-                    building our development process, creating benchmarks for developers and designing assessments
-                    for new hires. He showed real leadership and drive throughout.
-                </p>
-                <p class="text-gray-400 leading-relaxed">
-                    <span class="text-2xl font-semibold">O</span>n top of that, Noel kept pushing himself by studying while holding down his full-time role.
-                    If I had the chance to hire him again? Absolutely, without a doubt.
-                </p>
-                <div>
-                    <button onclick="closeDialog('lourens-nortje-dialog')"
-                            class="mt-4 text-orange-500 hover:text-fuchsia-400 font-mono rounded-lg border border-orange-500 hover:border-fuchsia-500 py-2 px-4 float-right">
-                        Close ✕
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Alain dialog -->
-    <div id="alain-jacquet-dialog"
-         class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden slide-in-right">
-        <div class="bg-gray-900 p-8 rounded-lg max-w-xl max-h-[80vh] overflow-y-auto">
-            <div class="w-full">
-                <h3 class="text-xl font-heading text-white">Alain Jacquet</h3>
-                <div class="text-orange-500 font-mono text-sm mb-0">Managing Director</div>
-                <div class="text-fuchsia-400 font-mono text-sm mb-2">SABEeX</div>
-            </div>
-            <div class="flex flex-col gap-4">
-                <p class="text-gray-400 leading-relaxed">
-                    <span class="text-2xl font-semibold">W</span>hen I began development of the SABEeX Delivery Management System, I engaged Noel Young as an energetic
-                    and skilled developer. During his time with SABEeX, he built the original platform that is today one of
-                    the world's leading Online Procurement Platforms.
-                </p>
-                <p class="text-gray-400 leading-relaxed">
-                    <span class="text-2xl font-semibold">H</span>is insight into the architecture design and robust
-                    construction helped to establish a legacy. He went on to build services other world-renowned platforms
-                </p>
-                <p class="text-gray-400 leading-relaxed">
-                    <span class="text-2xl font-semibold">H</span>e's a legend!
-                </p>
-                <div>
-                    <button onclick="closeDialog('alain-jacquet-dialog')"
-                            class="mt-4 text-orange-500 hover:text-fuchsia-400 font-mono rounded-lg border border-orange-500 hover:border-fuchsia-500 py-2 px-4 float-right">
-                        Close ✕
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- NPGW dialog -->
     <div id="internal-monitoring-document-dialog"
          class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden">
@@ -1195,6 +945,132 @@
 </section>
 
 <script>
+    const token = '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';
+    async function fetchContributions(year) {
+        const from = `${year}-01-01T00:00:00Z`;
+        const to = `${year}-12-31T23:59:59Z`;
+
+        const query = `{
+        user(login: "alessandrofhs") {
+            contributionsCollection(from: "${from}", to: "${to}") {
+                contributionCalendar {
+                    totalContributions
+                    weeks {
+                        contributionDays {
+                            contributionCount
+                            date
+                        }
+                    }
+                }
+            }
+        }
+    }`;
+
+        const res = await fetch('https://api.github.com/graphql', {
+            method: 'POST',
+            headers: {
+                'Authorization': `bearer ${token}`,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ query })
+        });
+
+        const data = await res.json();
+        return data.data.user.contributionsCollection.contributionCalendar;
+    }
+    function drawCalendar(calendar) {
+        document.getElementById('contrib-total').textContent = calendar.totalContributions.toLocaleString();
+        document.getElementById('contrib-year').textContent = document.querySelector('.year-btn.border-orange-500')?.textContent.trim() || '';
+        const canvas = document.getElementById('contrib-canvas');
+        const weeks = calendar.weeks;
+        const cellSize = 11;
+        const gap = 3;
+        const paddingLeft = 35;
+        const paddingTop = 25;
+        const cols = weeks.length;
+
+        const totalWidth = paddingLeft + cols * (cellSize + gap);
+        const totalHeight = paddingTop + 7 * (cellSize + gap);
+
+        // Fix blurry canvas — set actual pixel size
+        const dpr = window.devicePixelRatio || 1;
+        canvas.width = totalWidth * dpr;
+        canvas.height = totalHeight * dpr;
+        canvas.style.width = '100%';
+        canvas.style.height = 'auto';
+
+        const ctx = canvas.getContext('2d');
+        ctx.scale(dpr, dpr);
+        ctx.clearRect(0, 0, totalWidth, totalHeight);
+
+        const colors = ['#161b22', '#9be9a8', '#40c463', '#30a14e', '#216e39'];
+        const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        const dayNames = ['', 'Mon', '', 'Wed', '', 'Fri', ''];
+
+        // Draw day labels
+        ctx.fillStyle = '#6e7681';
+        ctx.font = '9px monospace';
+        dayNames.forEach((label, i) => {
+            if (label) {
+                ctx.fillText(label, 0, paddingTop + i * (cellSize + gap) + cellSize - 2);
+            }
+        });
+
+        let lastMonth = -1;
+        weeks.forEach((week, wi) => {
+            const x = paddingLeft + wi * (cellSize + gap);
+
+            // Draw month label
+            const firstDay = new Date(week.contributionDays[0].date);
+            const month = firstDay.getMonth();
+            if (month !== lastMonth) {
+                ctx.fillStyle = '#6e7681';
+                ctx.font = '9px monospace';
+                ctx.fillText(monthNames[month], x, 12);
+                lastMonth = month;
+            }
+
+            week.contributionDays.forEach((day, di) => {
+                const y = paddingTop + di * (cellSize + gap);
+                const count = day.contributionCount;
+                let level = 0;
+                if (count > 0) level = 1;
+                if (count >= 4) level = 2;
+                if (count >= 8) level = 3;
+                if (count >= 12) level = 4;
+
+                ctx.fillStyle = colors[level];
+                ctx.beginPath();
+                ctx.roundRect(x, y, cellSize, cellSize, 2);
+                ctx.fill();
+            });
+        });
+    }
+
+    async function setYear(year) {
+        // Update button styles
+        document.querySelectorAll('.year-btn').forEach(btn => {
+            btn.classList.remove('border-orange-500', 'text-orange-500', 'bg-orange-500/10');
+            btn.classList.add('border-gray-700', 'text-gray-400');
+        });
+        const activeBtn = document.getElementById(`btn-${year}`);
+        if (activeBtn) {
+            activeBtn.classList.remove('border-gray-700', 'text-gray-400');
+            activeBtn.classList.add('border-orange-500', 'text-orange-500', 'bg-orange-500/10');
+        }
+
+        // Show loading
+        document.getElementById('contrib-loading').classList.remove('hidden');
+
+        try {
+            const calendar = await fetchContributions(year);
+            drawCalendar(calendar);
+        } catch (e) {
+            console.error('Failed to fetch contributions:', e);
+        } finally {
+            document.getElementById('contrib-loading').classList.add('hidden');
+        }
+    }
     // Scroll animation observer
     const observerOptions = {
         threshold: 0.1,
@@ -1282,9 +1158,9 @@
                 setTimeout(tick, randomDelay(50, 30));
             }
         }
-
         el.textContent = "";
         tick();
+        setYear(new Date().getFullYear());
     });
 
     // dialog
@@ -1296,7 +1172,5 @@
         document.getElementById(id).classList.add("hidden");
     }
 </script>
-
-
 </body>
 </html>
