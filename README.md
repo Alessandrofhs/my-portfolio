@@ -11,7 +11,7 @@
 # Alessandro Ferdhinand HS
 ### *Results-focused Full-Stack Software Developer*
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live-ff6b35?style=for-the-badge&logo=vercel&logoColor=white)](https://your-portfolio-url.vercel.app)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-ff6b35?style=for-the-badge&logo=vercel&logoColor=white)](https://alessandrofhs.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-c301c6?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alessandro-ferdhinand-hedi-syahputra-0837b9344)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-333?style=for-the-badge&logo=github&logoColor=white)](https://github.com/alessandrofhs)
 [![Email](https://img.shields.io/badge/Email-Contact-ff6b35?style=for-the-badge&logo=gmail&logoColor=white)](mailto:alessandrofhs@gmail.com)
